@@ -24,7 +24,7 @@ Sinatra Auto Reloader automatically reload your browser when you save code/html/
 == REQUIREMENTS:
 
 * run on sinatra 1.0 
-* Firefox
+* Firefox + Greasemonkey  or  Chrome
 
 == INSTALL:
 
