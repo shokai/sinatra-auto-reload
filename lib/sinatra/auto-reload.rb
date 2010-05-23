@@ -15,7 +15,7 @@ module Sinatra
     @host = env['HTTP_HOST']
     @interval = 1000
     @interval = params[:interval] if params[:interval]
-    erb open(File.dirname(__FILE__)+'/views/auto_reload_user_js.erb').read
+    erb open(File.dirname(__FILE__)+'/views/auto_reload_user_js.erb').read, :layout => false
   end
 
 end
