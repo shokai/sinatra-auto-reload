@@ -5,6 +5,9 @@ require 'rack'
 #require 'sinatra/auto-reload' if development?
 require File.dirname(__FILE__)+'/../lib/sinatra/auto-reload' if development?
 
+def auto_reload_ignores
+  [/db.*/, /config.yaml/]
+end
 
 get '/' do
   @host = env['HTTP_HOST']
