@@ -13,7 +13,7 @@ Sinatra Auto Reloader automatically reload your browser when you save code/html/
 == SYNOPSIS:
 
 1. load on your sinatra application
- require 'sinatra-auto-reloader' if development?
+ require 'sinatra/auto-reloader' if development?
 
 2. Install userscript for chrome/firefox
  http://hostname:port/sinatra_auto_reload.user.js
