@@ -2,8 +2,8 @@
 require 'rubygems'
 require 'sinatra'
 require 'rack'
-require 'sinatra-auto-reload' if development?
-#require '../lib/sinatra-auto-reload' if development?
+#require 'sinatra/auto-reload' if development?
+require File.dirname(__FILE__)+'/../lib/sinatra/auto-reload' if development?
 
 
 get '/' do
