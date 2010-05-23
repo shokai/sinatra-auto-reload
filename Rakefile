@@ -4,7 +4,7 @@ require 'hoe'
 require 'fileutils'
 require './lib/sinatra-auto-reload'
 
-VERSION = '0.0.1'
+VERSION = '0.0.2'
 
 Hoe.plugin :newgem
 # Hoe.plugin :website

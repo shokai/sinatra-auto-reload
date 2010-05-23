@@ -4,23 +4,31 @@
 
 == DESCRIPTION:
 
-FIX (describe your package)
+Sinatra Auto Reloader automatically reload your browser when you save code/html/js/images
 
 == FEATURES/PROBLEMS:
 
-* FIX (list of features or problems)
+* need to fix for application running on Sub URL
 
 == SYNOPSIS:
 
-  FIX (code sample of usage)
+1. load on your sinatra application
+ require 'sinatra-auto-reloader' if development?
+
+2. Install userscript for chrome/firefox
+ http://hostname:port/sinatra_auto_reload.user.js
+
+ It checks last modified time (http://hostname:port/sinatra_auto_reload) 
+ every second.
 
 == REQUIREMENTS:
 
-* FIX (list of requirements)
+* run on sinatra 1.0 
+* Firefox
 
 == INSTALL:
 
-* FIX (sudo gem install, anything else)
+* gem install sinatra-auto-reload
 
 == LICENSE:
 
