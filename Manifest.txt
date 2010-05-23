@@ -1,0 +1,14 @@
+History.txt
+Manifest.txt
+PostInstall.txt
+README.rdoc
+Rakefile
+lib/sinatra-auto-reload.rb
+lib/views/auto_reload_user_js.erb
+script/console
+script/destroy
+script/generate
+spec/sinatra-auto-reload_spec.rb
+spec/spec.opts
+spec/spec_helper.rb
+tasks/rspec.rake
