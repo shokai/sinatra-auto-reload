@@ -4,7 +4,7 @@
 // @namespace      http://shokai.org/
 // @description    reload Firefox/Chrome when <%= @host %> was modified
 // @include        http://<%=@host%>/*
-// @version        0.0.1
+// @version        0.0.2
 // @author         shokai (Sho Hashimoto)
 // ==/UserScript==
 
@@ -14,7 +14,6 @@ setInterval(function(){
 	var req = new XMLHttpRequest;
 	req.open("GET", "http://<%=@host%>/sinatra_auto_reload", true);
 	req.onload = function(){
-	    console.log(req.responseText);
 	    (self.old && req.responseText != self.old) && location.reload(true);
 	    self.old = req.responseText;
 	};
