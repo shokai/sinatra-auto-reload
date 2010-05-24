@@ -25,7 +25,7 @@ every second.
 define on your application
 
  def auto_reload_ignores
-   [/db.*/, /config.yaml/]
+   [/db.*/, /config.yaml/, /log.*/, /tmp.*/]
  end
 
 * see examples/app.rb
